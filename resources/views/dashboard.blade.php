@@ -27,17 +27,16 @@
       </a>
       <div>
         <a
-          href="{{ route('register') }}"
+          href="{{ route('welcome') }}"
           class="rounded-md bg-gray-400 bg-opacity-30 py-3 px-3 text-white font-semibold shadow-lg hover:shadow-xl hover:bg-opacity-65 transition duration-280 ease-in-out"
-          >Log In</a
-        >
-        <a
-          href="{{ route('register') }}"
-          class="rounded-md bg-[#0099ff] bg-opacity-50 py-3 px-3 text-white font-semibold shadow-lg hover:shadow-xl hover:bg-opacity-65 transition duration-280 ease-in-out"
-          >Register</a
+          >Log Out</a
         >
       </div>
     </header>
-    
+    <main>
+        <div class="m-6 mb-12 rounded-xl p-6 shadow-xl sm:p-10">
+            <h1 class="text-3xl font-semibold">Dashboard</h1>
+        </div>
+    </main>
   </body>
 </html>
