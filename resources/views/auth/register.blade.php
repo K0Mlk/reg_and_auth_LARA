@@ -55,7 +55,8 @@
       <div
         class="bg-white/65 sm:t-10 backdrop-blur-xl mt-10 p-6 sm:p-10 mx-auto rounded-xl shadow-xl w-full max-w-md"
       >
-        <form action="#" autocomplete="off" class="space-y-6">
+        <form action="{{ route('register') }}" method="post" novalidate autocomplete="off" class="space-y-6">
+          @csrf
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700"
               >Name:</label
@@ -200,12 +201,12 @@
             </div>
           </div>
           <div>
-            <a
+            <button type="submit"
               href="{{ route('dashboard') }}"
-              class="flex justify-center items-center rounded-md bg-[#0099ff] bg-opacity-50 py-3 px-3 
+              class="w-full flex justify-center items-center rounded-md bg-[#0099ff] bg-opacity-50 py-3 px-3 
               font-semibold text-white  shadow-lg hover:shadow-xl hover:bg-opacity-65 transition duration-280 ease-in-out
               focus:shadow-xl focus:outline-none"
-              >Sign Up</a
+              >Sign Up</button
             >
           </div>
         </form>
